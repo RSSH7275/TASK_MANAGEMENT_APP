@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>TODO TASK</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="headingStyle">
+        <p>TASK MANAGEMENT APP</p>
+      </div>
+      <div class="taskBox">
+        <label for="Title" class="labelStyle">Title :</label>
+        <input
+          type="text"
+          value=""
+          onchange="handleTitleChange(this.value)"
+          id="titleId"
+          placeholder="Enter Title"
+        />
+        <label for="Title" class="labelStyle">Description :</label>
+        <input
+          type="text"
+          value=""
+          onchange="handleDescriptionChange(this.value)"
+          id="description"
+          placeholder="Enter Description"
+        />
+       
+        <select id="taskUrgency" onchange="taskPriority()">
+          <option value="" disabled selected hidden>Choose  Priority</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+      </select>
+
+        <button onclick="handleClick()" id="assignClick">Assign Task</button>
+      </div>
+
+      <div class="assignBox" id="assignBox">
+      
+      </div>
+      
+      <div class="taskCompletedSection" id="taskCompletedSection">
+       
+      </div>
+      
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        
+
+          </div>
+       
+    </div>
+
+
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
